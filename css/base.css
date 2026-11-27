@@ -1,0 +1,171 @@
+:root{
+    --bs-primary: #39A9E8;
+    --bs-primary-rgb: 57, 169, 232;
+    --bs-body-color: #0F2A3F;
+    --bs-body-font-family: Inter, system-ui, sans-serif;
+    --bs-link-color: #0F2A3F;
+    --bs-link-hover-color: #39A9E8;
+    --bs-danger: #FF1919;
+    --bs-danger-rgb: 255, 25, 25;
+    --ks-bright: #39A9E8;
+    --ks-soft: #78C9F2;
+    --ks-ice: #DDF3FF;
+    --ks-ink: #0F2A3F;
+    --ks-tag: #F0AB00;
+}
+
+.btn {
+    --bs-btn-border-radius: .75rem;
+    font-weight: 600;
+}
+
+.btn-primary{
+    --bs-btn-bg: #39A9E8;
+    --bs-btn-border-color: #39A9E8;
+    --bs-btn-hover-bg: #78C9F2;
+    --bs-btn-hover-border-color: #78C9F2;
+    --bs-btn-hover-color: #0F2A3F;
+    --bs-btn-active-bg: #78C9F2;
+    --bs-btn-active-border-color: #78C9F2;
+    --bs-btn-active-color: #0F2A3F;
+    --bs-btn-disable-bg: #39A9E8;
+    --bs-btn-disable-border-color: #39A9E8;
+}
+
+.btn-outline-primary{
+    --bs-btn-color: #0F2A3F;
+    --bs-btn-border-color: #39A9E8;
+    --bs-btn-hover-bg: #78C9F2;
+    --bs-btn-hover-border-color: #78C9F2;
+    --bs-btn-hover-color: #0F2A3F;
+    --bs-btn-active-bg: #39A9E8;
+    --bs-btn-active-border-color: #39A9E8;
+    --bs-btn-active-color: #fff;
+}
+
+.btn-light{
+    --bs-btn-color: #0F2A3F;
+    --bs-btn-hover-bg: #DDF3FF
+}
+
+.btn-danger{
+    --bs-btn-bg: #FF1919;
+    --bs-btn-border-color: #FF1919;
+    --bs-btn-hover-bg: #D90000;
+    --bs-btn-hover-border-color: #D90000;
+}
+
+.text-primary{
+    color: var(--ks-ink) !important;
+}
+
+.card{
+    --bs-card-border-radius: 1.1rem;
+    border: 1.5px solid var(--ks-bright);
+    box-shadow: 0 2px 6px rgba(15, 42, 63, .12);
+}
+
+.card-fill{
+    background: var(--ks-bright);
+    color: #fff;
+}
+
+.from-control, .from-select{
+    border: 1.5px solid var(--ks-bright);
+    border-radius: .75rem;
+    min-height: 46px;
+}
+
+.from-control:focus, .from-select:focus{
+    border-color: var(--ks-ink);
+    box-shadow: 0 0 0 .25rem rgba(120, 201, 242, .5);
+}
+
+.accordion-item{
+    border: 1.5px solid var(--ks-bright) !important;
+    border-radius: .9rem !important;
+    margin-bottom: .75rem;
+    overflow: hidden;
+}
+
+.accordion-button{
+    color: var(--ks-ink);
+    font-weight: 600;
+}
+
+.accordion-button: not(.collapsed){
+    color: var(--ks-ink); 
+    background: var(--ks-ice);
+}
+
+.navbar .nav-link.active{
+    box-shadow: 0 2px 0 #fff;
+}
+
+.ks-mist { 
+    background: var(--ks-ice); 
+}
+
+.ks-tag{
+    background: var(--ks-tag); 
+    color: #fff; 
+    font-weight: 600;
+}
+
+.ks-dashed{
+    border: 2px dashed var(--ks-bright); 
+    border-radius: 1rem; 
+    color: var(--ks-ink);
+}
+
+.thumb{
+    height: 140px;
+    border-radius: 1rem 1rem 0 0;
+    background: linear-gradient(135deg, #78C9F2, #DDF3FF) center/cover;
+}
+
+h1, .h1 { font-weight: 700; }
+
+.navbar .nav-link { font-size: 1.1rem; }
+
+.chip { 
+    font-size: 1rem; 
+    padding: .45rem 1.1rem; }
+
+.ks-hero .chip { background: #fff; }
+
+.ks-blue .text-secondary, .ks-blue { color: var(--ks-bright); }
+
+.ks-blue .text-secondary { color: var(--ks-bright) !important; }
+
+.ks-ic { 
+    width: 34px; 
+    height: 34px; 
+    fill: none; 
+    stroke: currentColor; 
+    stroke-width: 1.8;
+    stroke-linecap: round; 
+    stroke-linejoin: round; 
+    display: block; 
+    margin-bottom: .6rem; 
+}
+
+.card-fill h3, .ks-hero h1, .ks-hero h2, .bg-primary h2, .bg-primary h3 { color: #fff; }
+
+.ks-hero {
+    background:
+        linear-gradient(100deg, rgba(15, 42, 63, 0.85), rgba(57, 169, 232, 0.45)),
+        url('../assets/hero.png') center / cover, #0f2a3f;
+}
+
+.ks-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--ks-bright);
+    color: #fff;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    flex: none;
+}

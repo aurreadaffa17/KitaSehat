@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>KitaSehat - Beranda</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body data-page="beranda" class="d-flex flex-column min-vh-100">
+        <div id="site-header"></div>
+        <main class="container py-4">
+        <section class="ks-hero rounded-4 p-4 p-md-5 text-white" style="background-color: #0f2a3f">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-bold">Badan kurang enak? Cek dulu disini.</h1>
+                    <p class="lead">Kenali gejala awal, ngobrol dengan dokter, dan pesan obat bebas, semuanya di satu tempat. Tanpa iklan.</p>
+                    <form class="input-group mb-3" id="hero-form">
+                        <label for="hero-q" class="visually-hidden">Gejala</label>
+                        <input id="hero-q" class="form-control"placeholder="Tulis gejala disini">
+                        <button class="btn btn-primary">Cari</button>
+                    </form>
+                    <div class="d-flex flex-wrap gap-2" id="hero-chips"></div></div>
+                <div class="col-lg-5">
+                    <aside class="bg-primary rounded-4 p-4 vstack gap-3">
+                    <h2 class="h3 mb-0">Kondisi darurat?</h2>
+                    <p class="mb-0">Jangan menunggu hasil cek gejala. Hubungi bantuan sekarang.</p>
+                    <div class="bg-white text-primary rounded-3 p-3 d-flex justify-content-between align-items-center gap-2">
+                        <span>Ambulans dan gawat darurat.</span>
+                        <a class="btn btn-danger" href="tel:119">119</a>
+                    </div>
+                    <div class="bg-white text-primary rounded-3 p-3 d-flex justify-content-between align-items-center gap-2">
+                        <span>Layanan darurat umum.</span>
+                        <a class="btn btn-danger" href="tel:112">112</a>
+                    </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-3 mt-3">
+            <div class="col-6 col-md-3">
+                <a class="card card-fill h-100 text-decoration-none" href="cek-gejala.html">
+                    <div class="card-body">
+                        <svg class="ks-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg>
+                        <h3 class="h4">Cek Gejala</h3> 
+                        <span>Kenali gejala awal dan langkah pertama.</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a class="card h-100 text-decoration-none text-reset" href="konsultasi.html">
+                    <div class="card-body ks-blue">
+                        <svg class="ks-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
+                        <h3 class="h4">Konsultasi</h3>
+                        <span class="text-secondary">Ngobrol dengan dokter dari mana saja.</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a class="card h-100 text-decoration-none text-reset" href="apotek.html">
+                    <div class="card-body ks-blue">
+                        <svg class="ks-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z"/></svg>
+                        <h3 class="h4">Apotek</h3>
+                        <span class="text-secondary">Pesan obat bebas dari apotek terpercaya.</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a class="card h-100 text-decoration-none text-reset" href="artikel.html">
+                    <div class="card-body ks-blue">
+                        <svg class="ks-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM9 12h7M9 16h7"/></svg>
+                        <h3 class="h4">Artikel</h3>
+                        <span class="text-secondary">Bacaan pencegahan dengan filter topik.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="ks-mist rounded-4 p-4 mt-4">
+            <h2 class="h3">Cari faskes terdekat</h2>
+            <p>Puskesmas, klinik, atau rumah sakit di sekitarmu. Peserta BPJS bisa mulai dari faskes tingkat pertama.</p>
+            <div class="row g-2">
+                <div class="col-md-auto">
+                    <button class="btn btn-primary w-100" id="btn-lokasi">Aktifkan lokasi</button>
+                </div>
+                <div class="col-md">
+                    <form class="input-group" id="form-faskes">
+                        <label for="q-faskes" class="visually-hidden">Kota atau kecamatan</label>
+                        <input id="q-faskes" class="form-control" placeholder="Ketik kota atau kecamatan">
+                        <button class="btn btn-primary">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="ks-dashed p-3 mt-4">Setiap artikel diberi label <b>terverifikasi dokter</b>. Data pribadimu tidak dijual. Baca kebijakan privasi</div>
+        <section class="mt-5">
+            <h2 class="h3 mb-3">Cara Menggunakan</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card card-body h-100">
+                        <div class="d-flex align-items-center gap-3 mb-2"><span class="ks-num">1</span>
+                            <h3 class="h5 text-primary mb-0">Tulis gejala</h3>
+                        </div>
+                        <p class="text-secondary mb-0">Pilih satu atau dua keluhan yang sedang kamu rasakan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-body h-100">
+                        <div class="d-flex align-items-center gap-3 mb-2"><span class="ks-num">2</span>
+                            <h3 class="h5 text-primary mb-0">Baca panduan awal</h3>
+                        </div>
+                        <p class="text-secondary mb-0">Dapatkan langkah pertolongan pertama yang singkat dan jelas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-body h-100">
+                        <div class="d-flex align-items-center gap-3 mb-2"><span class="ks-num">3</span>
+                            <h3 class="h5 text-primary mb-0">Putuskan langkahnya</h3>
+                        </div>
+                        <p class="text-secondary mb-0">Konsultasi dengan dokter, pesan obat, atau cari faskes terdekat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <h2 class="h3 mb-3">Kebiasaan kecil, dampak besar</h2>
+            <div class="row g-3">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card card-fill card-body h-100">
+                        <h3 class="h5">Cukup minum air putih</h3>
+                        <p class="mb-0">Tubuh yang terhidrasi membantu fokus dan energi sepanjang hari.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card card-fill card-body h-100">
+                        <h3 class="h5">Tidur 7-9 jam</h3>
+                        <p class="mb-0">Tidur cukup menjaga daya tahan tubuh, terutama saat tugas menumpuk.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card card-fill card-body h-100">
+                        <h3 class="h5">Bergerak setiap hari</h3>
+                        <p class="mb-0">Jalan kaki atau peregangan ringan sudah membantu.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card card-fill card-body h-100">
+                        <h3 class="h5">Cuci tangan pakai sabun</h3>
+                        <p class="mb-0">Cara paling sederhana untuk mencegah penularan penyakit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+                <h2 class="h3 mb-0">Bacaan terbaru</h2>
+                <a class="btn btn-outline-primary" href="artikel.html">Lihat semua artikel</a>
+            </div>
+            <div class="row g-3" id="a-terbaru"></div>
+        </section>
+        <section class="mt-5">
+            <h2 class="h3 mb-3">Pertanyaan yang sering muncul</h2>
+            <div class="accordion" id="faq">
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f1">Apakah KitaSehat bisa mendiagnosis penyakit?</button></h3>
+                    <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                        <div class="accordion-body">Tidak. Informasinya bersifat edukatif sebagai gambaran awal. Pemeriksaan dan diagnosis tetap dilakukan tenaga kesehatan.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">Apakah data pribadiku aman?</button></h3>
+                    <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                        <div class="accordion-body">Kami hanya meminta data yang diperlukan dan tidak menjual data pribadi.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">Apakah konsultasi dan obat berbayar?</button></h3>
+                    <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                        <div class="accordion-body">Level biaya terlihat di awal, dan rincian harga muncul sebelum kamu mengonfirmasi. Peserta BPJS bisa memanfaatkan faskes tingkat pertama.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f4">Kapan aku harus langsung ke dokter?</button></h3>
+                    <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faq">
+                        <div class="accordion-body">Jika ada sesak napas, nyeri dada, pingsan, kejang, atau gejala yang cepat memburuk, hubungi 119 atau datang ke fasilitas kesehatan terdekat.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-primary text-white text-center rounded-5 p-5 mt-5">
+            <h2 class="mb-3">Mulai dari satu gejala</h2>
+            <p >Hanya butuh beberapa detik untuk mendapatkan panduan awal.</p>
+            <a class="btn btn-light" href="cek-gejala.html">Cek gejala sekarang</a>
+        </section>
+        </main>
+        <div id="site-footer" class="mt-auto pt-5"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/auth.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/layout.js"></script>
+        <script src="js/data/artikel.js"></script>
+        <script src="js/beranda.js"></script>
+    </body>
+    </html>
