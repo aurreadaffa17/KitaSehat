@@ -29,7 +29,7 @@ const ARTIKEL = [
         judul: 'Pendekatan Lifestyle Medicine untuk Indonesia Sehat',
         kategori: 'Gaya hidup',
         gambar: 'assets/artikel_3.png',
-        ringkas: 'Lifestyle medicine adalah pendekatan medis berbasis bukti ilmiah yang berfokus pada perubahan gaya hidup sehari-hari untuk mencegah, mengelola, bahkan memulihkan berbagai penyakit kronis.'
+        ringkas: 'Lifestyle medicine adalah pendekatan medis berbasis bukti ilmiah yang berfokus pada perubahan gaya hidup sehari-hari untuk mencegah, mengelola, bahkan memulihkan berbagai penyakit kronis.',
         bagian: [
             [
                 'Mengapa lifestyle medicine penting',
@@ -44,7 +44,7 @@ const ARTIKEL = [
         judul: 'Gaya Hidup Sehat Ala Gen Z',
         kategori: 'Gaya hidup',
         gambar: 'assets/artikel_4.png',
-        ringkas: 'Gaya hidup sehat bagi Gen Z perlu dijalankan secara realistis sesuai kebutuhan biologis tubuh, bukan sekadar mengikuti tren media sosial atau tekanan lingkungan pergaulan.'
+        ringkas: 'Gaya hidup sehat bagi Gen Z perlu dijalankan secara realistis sesuai kebutuhan biologis tubuh, bukan sekadar mengikuti tren media sosial atau tekanan lingkungan pergaulan.',
         bagian: [
             [
                 'Tantangan gaya hidup sehat pada generasi muda',
@@ -59,7 +59,7 @@ const ARTIKEL = [
         judul: 'Mengenali Gejala Diabetes Sejak Dini',
         kategori: 'Gejala',
         gambar: 'assets/artikel_5.png',
-        ringkas: 'Diabetes sering berkembang secara perlahan tanpa disadari, sehingga mengenali tanda-tanda awalnya sangat penting agar kadar gula darah bisa segera dikendalikan sebelum memicu komplikasi.'
+        ringkas: 'Diabetes sering berkembang secara perlahan tanpa disadari, sehingga mengenali tanda-tanda awalnya sangat penting agar kadar gula darah bisa segera dikendalikan sebelum memicu komplikasi.',
         bagian: [
             [
                 'Mengapa mengenali gejala diabetes penting',
@@ -74,7 +74,7 @@ const ARTIKEL = [
         judul: 'Mengenal dan Menangani Flu Singapura',
         kategori: 'Gejala',
         gambar: 'assets/artikel_6.png',
-        ringkas: 'Flu Singapura (Hand, Foot, and Mouth Disease / HFMD) adalah infeksi virus menular yang umumnya menyerang anak-anak dengan ciri khas ruam atau lenting di tangan, kaki, dan sariawan di mulut.'
+        ringkas: 'Flu Singapura (Hand, Foot, and Mouth Disease / HFMD) adalah infeksi virus menular yang umumnya menyerang anak-anak dengan ciri khas ruam atau lenting di tangan, kaki, dan sariawan di mulut.',
         bagian: [
             [
                 'Mengapa flu Singapura mudah menular',
