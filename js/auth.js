@@ -234,3 +234,4 @@ const Auth = {
     }
     return bootstrap.Modal.getOrCreateInstance($('m-login'));
   }
+}
