@@ -93,7 +93,7 @@
     font-weight: 600;
 }
 
-.accordion-button: not(.collapsed){
+.accordion-button:not(.collapsed){
     color: var(--ks-ink); 
     background: var(--ks-ice);
 }
@@ -169,3 +169,35 @@ h1, .h1 { font-weight: 700; }
     place-items: center;
     flex: none;
 }
+
+.ks-auth .modal-content { border: 0; border-radius: 1.1rem; overflow: hidden; }
+.ks-auth-side { background: var(--ks-bright); color: #fff; padding: 2rem; min-height: 540px; }
+.ks-glass {
+    background: rgba(255, 255, 255, .18);
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.ks-auth-side .ks-ic { width: 26px; height: 26px; margin-bottom: .4rem; }
+.ks-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    font-size: .8rem;
+    color: var(--ks-bright);
+    border: 1.5px solid var(--ks-soft);
+    border-radius: 999px;
+    padding: .2rem .85rem;
+}
+
+.ks-pill::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ks-bright);
+}
+
+.ks-auth label { font-size: .85rem; font-weight: 600; margin-bottom: .25rem; }
+.ks-link { color: var(--ks-bright); font-weight: 600; text-decoration: none; }
