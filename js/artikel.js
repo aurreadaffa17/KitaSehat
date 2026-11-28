@@ -23,7 +23,7 @@ function tampilDetail(a) {
         <div class="mt-3"><span class="badge ks-tag">Terverifikasi dokter</span></div>
         <h1 class="my-3">${a.judul}</h1>
         <div class="text-secondary small">
-            ${a.kategori} · 4 menit baca · Ditinjau oleh dr. [Nama] · Diperbarui [tanggal]
+            ${a.kategori} · 4 menit baca · Ditinjau oleh dr. Gia · Diperbarui 17 November 2026
         </div>
         <div class="thumb rounded-4 my-4" style="height: 240px; background-image: url('${a.gambar}'), linear-gradient(135deg, #78c9f2, #ddf3ff)"></div>
         <div class="ks-mist rounded-3 p-3"><b>Intinya</b><p class="mb-0">${a.ringkas}</p></div>
