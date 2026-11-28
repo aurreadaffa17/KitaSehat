@@ -1,0 +1,32 @@
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--ks-ice);
+  color: var(--ks-ink);
+  font-weight: 700;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.chat-body {
+  min-height: 340px;
+  max-height: 55vh;
+  overflow-y: auto;
+}
+
+.bub {
+  max-width: 82%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  margin: 8px 0;
+  background: var(--ks-ice);
+}
+
+.bub.u {
+  background: var(--bs-primary);
+  color: #fff;
+  margin-left: auto;
+}
